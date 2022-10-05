@@ -1,0 +1,8 @@
+prefix=/home/mamad/Graspit/devel
+
+Name: timestamp_tools
+Description: Description of timestamp_tools
+Version: 1.6.8
+Cflags: -I/home/mamad/Graspit/src/shadow_dep/driver_common/timestamp_tools/include
+Libs: -L/home/mamad/Graspit/devel/lib 
+Requires: roslib roscpp

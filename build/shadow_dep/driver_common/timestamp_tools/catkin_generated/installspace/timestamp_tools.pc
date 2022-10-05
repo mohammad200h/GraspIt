@@ -1,0 +1,8 @@
+prefix=/home/mamad/Graspit/install
+
+Name: timestamp_tools
+Description: Description of timestamp_tools
+Version: 1.6.8
+Cflags: -I/home/mamad/Graspit/install/include
+Libs: -L/home/mamad/Graspit/install/lib 
+Requires: roslib roscpp

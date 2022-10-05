@@ -1,0 +1,8 @@
+prefix=/home/mamad/Graspit/install
+
+Name: urdf_traverser
+Description: Description of urdf_traverser
+Version: 1.0.2
+Cflags: -I/home/mamad/Graspit/install/include
+Libs: -L/home/mamad/Graspit/install/lib -lurdf_traverser
+Requires: roscpp urdf eigen_conversions baselib_binding

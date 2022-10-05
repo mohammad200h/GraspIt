@@ -1,0 +1,29 @@
+launching Graspit :
+rosrun graspit graspit_simulator
+
+----------------------------------------
+setting up env vatiable for grasp it:
+
+Error:
+Please set the GRASPIT environment variable to the root directory of graspIt.
+Could not open /models/robots/jaco_robot/jaco_robot.xml
+Could not open /models/robots/jaco_robot/jaco_robot.xml
+
+Soloution:
+https://github.com/JenniferBuehler/graspit-pkgs/wiki/Setting-up-GraspIt
+echo "export GRASPIT=/home/mamad/Graspit/src/Graspit_env" >> ~/.bashrc  
+source ~/.bashrc
+------------------------------
+Error:
+Loading Plugin: libgraspit_interfaceCould not find relative plugin file libgraspit_interface.so in any directory specified in GRASPIT_PLUGIN_DIR
+Failed to load plugin: libgraspit_interface
+
+Solution:
+https://github.com/graspit-simulator/graspit_interface/issues/18
+
+
+-------------------------Converting urdf to graspit--------------------
+https://github.com/JenniferBuehler/graspit-pkgs/wiki/urdf2graspit
+https://github.com/JenniferBuehler/graspit-pkgs/wiki/Conversion-with-urdf2graspit
+https://github.com/JenniferBuehler/urdf-tools-pkgs/wiki/urdf2inventor
+

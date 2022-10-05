@@ -1,0 +1,8 @@
+setup.py
+src/graspit_commander/__init__.py
+src/graspit_commander/graspit_commander.py
+src/graspit_commander/graspit_exceptions.py
+src/graspit_commander.egg-info/PKG-INFO
+src/graspit_commander.egg-info/SOURCES.txt
+src/graspit_commander.egg-info/dependency_links.txt
+src/graspit_commander.egg-info/top_level.txt

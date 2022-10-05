@@ -1,0 +1,28 @@
+#Inventor V2.1 ascii
+
+
+DEF _lh_thbase Separator {
+
+  Material {
+    ambientColor 0.2 0.2 0.2
+    diffuseColor 1 0 0
+    transparency 0
+
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0 4.4408921e-016 -1 0
+        -1 0 0 0
+        0 1 4.4408921e-016 0
+        0 0 0 1
+
+    }
+    Cube {
+      width 1
+      height 1
+      depth 1
+
+    }
+  }
+}

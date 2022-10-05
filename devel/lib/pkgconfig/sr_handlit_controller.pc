@@ -1,0 +1,8 @@
+prefix=/home/mamad/Graspit/devel
+
+Name: sr_handlit_controller
+Description: Description of sr_handlit_controller
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/mamad/Graspit/devel/lib 
+Requires: 

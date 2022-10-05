@@ -1,0 +1,8 @@
+prefix=/home/mamad/Graspit/devel
+
+Name: ros_ethercat_hardware
+Description: Description of ros_ethercat_hardware
+Version: 0.3.0
+Cflags: -I/home/mamad/Graspit/src/shadow_dep/ros_ethercat/ros_ethercat_hardware/include
+Libs: -L/home/mamad/Graspit/devel/lib -lros_ethercat_hardware
+Requires: roscpp realtime_tools diagnostic_msgs diagnostic_updater pluginlib hardware_interface ros_ethercat_eml

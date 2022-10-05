@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<world>
+    <obstacle>
+        <filename>models/obstacles/simpleFloor.xml</filename>
+        <transform>
+            <fullTransform>(+1 0 0 0)[0 0 0]</fullTransform>
+        </transform>
+    </obstacle>
+    <obstacle>
+        <filename>models/obstacles/table.xml</filename>
+        <transform>
+            <fullTransform>(+1 0 0 0)[0 0 0]</fullTransform>
+        </transform>
+    </obstacle>
+    <obstacle>
+        <filename>models/obstacles/puma_stand.xml</filename>
+        <transform>
+            <fullTransform>(+1 0 0 0)[0 0 -1]</fullTransform>
+        </transform>
+    </obstacle>
+    <graspableBody>
+        <filename>models/objects/glass.xml</filename>
+        <transform>
+            <fullTransform>(+0.996 -0.0781588 +0.0111872 +0.0418439)[+1.31244 +525.048 -465.928]</fullTransform>
+        </transform>
+    </graspableBody>
+    <robot>
+        <filename>models/robots/ShadowHandlit/ShadowHandlitSimple_V0.xml</filename>
+        <dofValues>-0.0605386 0 +0.322379 +0.21407 0 +0.0894097 +0.187575 0 +0.0497547 +0.215765 0 +0.0406351</dofValues>
+        <transform>
+            <fullTransform>(0 1 0 0)[-50 +525.00 -390.0]</fullTransform>
+        </transform>
+    </robot>
+    <camera>
+        <position>-50.3792 +1987.84 +359.447</position>
+        <orientation>-0.0133373 +0.554021 +0.832395 -0.00105661</orientation>
+        <focalDistance>+2155.4</focalDistance>
+    </camera>
+</world>

@@ -1,0 +1,8 @@
+prefix=/home/mamad/Graspit/devel
+
+Name: sr_hardware_interface
+Description: Description of sr_hardware_interface
+Version: 1.4.0
+Cflags: -I/home/mamad/Graspit/src/shadow_dep/sr_core/sr_hardware_interface/include
+Libs: -L/home/mamad/Graspit/devel/lib 
+Requires: roscpp ros_ethercat_hardware ros_ethercat_model

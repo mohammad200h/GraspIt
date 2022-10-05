@@ -1,0 +1,8 @@
+prefix=/home/mamad/Graspit/devel
+
+Name: sr_gazebo_sim
+Description: Description of sr_gazebo_sim
+Version: 0.0.0
+Cflags: -I/home/mamad/Graspit/src/shadow_dep/sr_core/sr_gazebo_sim/include -I/usr/include
+Libs: -L/home/mamad/Graspit/devel/lib -lsr_gazebo_sim /usr/lib/x86_64-linux-gnu/libtinyxml.so
+Requires: roscpp sr_hardware_interface ros_ethercat_model gazebo_ros_control

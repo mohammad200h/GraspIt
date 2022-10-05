@@ -1,0 +1,8 @@
+prefix=/home/mamad/Graspit/devel
+
+Name: sr_3dmouse
+Description: Description of sr_3dmouse
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/mamad/Graspit/devel/lib 
+Requires: rospy std_msgs

@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<root>
+	<material>plastic</material>
+	<mass>16</mass>
+	<cog>0.01375 2.67776e-17 1.3468e-17</cog>
+	<inertia_matrix>0.0021 0 0 0  0.0022 0 0  0 0.001</inertia_matrix>
+	<geometryFile>lh_thdistal.iv</geometryFile>
+</root>

@@ -1,0 +1,97 @@
+step 1:
+sudo xhost +local:root
+
+step 2:
+cd /home/mamad/hand_RL_ws/DockerFile
+docker build --build-arg UNAME=$USER --build-arg UID=$(id -u) --build-arg GID=$(id -g) -t nvidia_docer2_kinetic_tensorflow_pytorch:base .
+
+step3:
+sudo docker run --runtime=nvidia  -it  --name hand_vision_ws -v $(pwd)/hand_vision_ws:$(pwd)/hand_vision_ws  -e DISPLAY -e LOCAL_USER_ID=$(id -u)  --user=$(id -u) -e QT_X11_NO_MITSHM=1  -v /tmp/.X11-unix:/tmp/.X11-unix:rw  --net=host --privileged nvidia_docer2_kinetic_tensorflow_pytorch:base 
+************************Seting up ros****************************
+step4:
+4.1. sudo -S sh -c '. /etc/lsb-release && echo "deb http://mirrors.ustc.edu.cn/ros/ubuntu/ $DISTRIB_CODENAME main" > /etc/apt/sources.list.d/ros-latest.list' 
+4.2. sudo -S apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 421C365BD9FF1F717815A3895523BAEEB01FA116
+4.3. sudo -S apt-get update
+4.4. sudo -S  apt-get install ros-kinetic-desktop-full
+4.5. sudo -S rosdep init
+4.6. rosdep update
+4.7. echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc
+4.8. . ~/.bashrc
+4.9. echo $PASS | sudo -S chmod +x /opt/ros/kinetic/setup.bash
+4.10.  bash /opt/ros/kinetic/setup.bash
+4.11. sudo -S  apt install python-rosinstall python-rosinstall-generator python-wstool build-essential
+
+step5:
+5.1 sudo -S  apt-get install ros-kinetic-ros-control ros-kinetic-ros-controllers 
+5.2 sudo -S apt-get install ros-kinetic-moveit
+5.3 sudo -S apt-get install graphicsmagick-libmagick-dev-compat
+5.4 sudo -S pip install pyyaml
+5.5 pip install pybullet
+Error*************************************************
+Error:
+CMake Error at /opt/ros/kinetic/share/catkin/cmake/catkinConfig.cmake:83 (find_package):
+  Could not find a package configuration file provided by "baselib_binding"
+  with any of the following names:
+
+    baselib_bindingConfig.cmake
+    baselib_binding-config.cmake
+Solution:
+Download: https://github.com/JenniferBuehler/convenience-pkgs/tree/master/baselib_binding
+
+Error:
+CMake Error: The following variables are used in this project, but they are set to NOTFOUND.
+Please set them or make sure they are set and tested correctly in the CMake files:
+BFD_LIBRARY
+    linked by target "sr_edc_ethercat_drivers" in directory /home/mamad/Graspit/src/shadow_dep/shadow_robot_ethercat/sr_edc_ethercat_drivers
+solution:
+https://stackoverflow.com/questions/39206466/bfd-library-not-found-error-when-configuring-oprofile
+sudo apt-get install binutils-dev
+
+Error:
+fatal error: sys/capability.h: No such file or directory
+Solution:
+https://github.com/hlandau/acme.t/issues/1
+sudo apt-get install libcap-dev
+
+Error:
+CMake Error at /opt/ros/kinetic/share/catkin/cmake/catkinConfig.cmake:83 (find_package):
+  Could not find a package configuration file provided by
+  "joint_trajectory_execution" with any of the following names:
+
+    joint_trajectory_executionConfig.cmake
+    joint_trajectory_execution-config.cmake
+Solution:
+https://github.com/JenniferBuehler/joint-control-pkgs
+
+Error:
+CMake Error at /opt/ros/kinetic/share/catkin/cmake/catkinConfig.cmake:83 (find_package):
+  Could not find a package configuration file provided by
+  "arm_components_name_manager" with any of the following names:
+
+    arm_components_name_managerConfig.cmake
+    arm_components_name_manager-config.cmake
+Solution:
+https://github.com/JenniferBuehler/convenience-pkgs
+
+***************************Setting up tensorflow*****************
+step 6:
+Download Download cuDNN v7.5.0 (Feb 21, 2019), for CUDA 9.2:
+1. Download cuDNN Library for Linux
+2. Download cuDNN Runtime Library for Ubuntu16.04 (Deb)
+3. Download cuDNN Developer Library for Ubuntu16.04 (Deb)
+4. install cuDNN Runtime Library for Ubuntu16.04
+	4.1 chmod +x libcudnn7_7.5.0.56-1+cuda9.2_amd64.deb 
+	4.2 sudo dpkg -i libcudnn7_7.5.0.56-1+cuda9.2_amd64.deb
+5. install cuDNN Developer Library for Ubuntu16.04
+	5.1 chmod +x libcudnn7-dev_7.5.0.56-1+cuda9.2_amd64.deb
+	5.2 sudo dpkg -i libcudnn7-dev_7.5.0.56-1+cuda9.2_amd64.deb
+
+6. copy file from cuDNN Library for Linux
+	6.1 extract folder
+	6.2 cd cuda
+	6.3 sudo sudo cp -R cuda/include/* /usr/local/cuda-9.2/lib64/
+	6.4 sudo sudo cp -R cuda/lib64/* /usr/local/cuda-9.2/include/
+
+
+
+

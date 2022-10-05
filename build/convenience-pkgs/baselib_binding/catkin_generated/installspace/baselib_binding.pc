@@ -1,0 +1,8 @@
+prefix=/home/mamad/Graspit/install
+
+Name: baselib_binding
+Description: Description of baselib_binding
+Version: 1.0.0
+Cflags: -I/home/mamad/Graspit/install/include
+Libs: -L/home/mamad/Graspit/install/lib 
+Requires: 

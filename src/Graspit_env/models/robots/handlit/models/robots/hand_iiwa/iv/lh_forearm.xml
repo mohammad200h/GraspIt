@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<root>
+	<material>plastic</material>
+	<mass>1800</mass>
+	<cog>0 0 0.09</cog>
+	<inertia_matrix>108 0 0 0  108 0 0  0 54</inertia_matrix>
+	<geometryFile>lh_forearm.iv</geometryFile>
+</root>

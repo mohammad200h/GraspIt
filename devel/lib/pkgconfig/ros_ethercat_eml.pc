@@ -1,0 +1,8 @@
+prefix=/home/mamad/Graspit/devel
+
+Name: ros_ethercat_eml
+Description: Description of ros_ethercat_eml
+Version: 0.3.0
+Cflags: -I/home/mamad/Graspit/src/shadow_dep/ros_ethercat/ros_ethercat_eml/include
+Libs: -L/home/mamad/Graspit/devel/lib -lros_ethercat_eml
+Requires: roscpp

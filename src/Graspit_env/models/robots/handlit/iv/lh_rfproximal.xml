@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<root>
+	<material>plastic</material>
+	<mass>30</mass>
+	<cog>-22.5 4.996e-15 3.61828e-15</cog>
+	<inertia_matrix>0.0098 0 0 0  0.01 0 0  0 0.0018</inertia_matrix>
+	<geometryFile>lh_rfproximal.iv</geometryFile>
+</root>

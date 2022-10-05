@@ -1,0 +1,8 @@
+prefix=/home/mamad/Graspit/install
+
+Name: gazebo_dev
+Description: Description of gazebo_dev
+Version: 2.5.15
+Cflags: 
+Libs: -L/home/mamad/Graspit/install/lib 
+Requires: 

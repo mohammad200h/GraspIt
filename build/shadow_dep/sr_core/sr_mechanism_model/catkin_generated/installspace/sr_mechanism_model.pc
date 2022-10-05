@@ -1,0 +1,8 @@
+prefix=/home/mamad/Graspit/install
+
+Name: sr_mechanism_model
+Description: Description of sr_mechanism_model
+Version: 1.4.0
+Cflags: -I/home/mamad/Graspit/install/include -I/usr/include
+Libs: -L/home/mamad/Graspit/install/lib -lsr_mechanism_model /usr/lib/x86_64-linux-gnu/libtinyxml.so
+Requires: roscpp sr_hardware_interface ros_ethercat_model

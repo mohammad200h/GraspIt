@@ -1,0 +1,8 @@
+prefix=/home/mamad/Graspit/install
+
+Name: pysdf
+Description: Description of pysdf
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/mamad/Graspit/install/lib 
+Requires: 

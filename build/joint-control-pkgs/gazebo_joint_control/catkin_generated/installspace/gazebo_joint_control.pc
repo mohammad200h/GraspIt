@@ -1,0 +1,8 @@
+prefix=/home/mamad/Graspit/install
+
+Name: gazebo_joint_control
+Description: Description of gazebo_joint_control
+Version: 0.0.0
+Cflags: -I/home/mamad/Graspit/install/include -I/usr/include
+Libs: -L/home/mamad/Graspit/install/lib -lgazebo_joint_control /usr/lib/x86_64-linux-gnu/libboost_system.so
+Requires: gazebo_ros roscpp sensor_msgs

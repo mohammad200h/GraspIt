@@ -1,0 +1,8 @@
+prefix=/home/mamad/Graspit/install
+
+Name: grasp_planning_graspit_ros
+Description: Description of grasp_planning_graspit_ros
+Version: 1.2.0
+Cflags: -I/home/mamad/Graspit/install/include
+Libs: -L/home/mamad/Graspit/install/lib -leigengrasp_planner_client
+Requires: roscpp grasp_planning_graspit grasp_planning_graspit_msgs moveit_msgs

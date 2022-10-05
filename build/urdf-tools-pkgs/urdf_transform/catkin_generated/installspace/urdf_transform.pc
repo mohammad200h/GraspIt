@@ -1,0 +1,8 @@
+prefix=/home/mamad/Graspit/install
+
+Name: urdf_transform
+Description: Description of urdf_transform
+Version: 1.0.2
+Cflags: -I/home/mamad/Graspit/install/include
+Libs: -L/home/mamad/Graspit/install/lib -lurdf_transform
+Requires: roscpp urdf_traverser baselib_binding

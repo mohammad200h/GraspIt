@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<world>
+<!--
+	<graspableBody>
+		<filename>models/objects/small_cube.xml</filename>
+		<transform>
+			<fullTransform>(+1 0 0 0)[+100 +0 +0]</fullTransform>
+		</transform>
+	</graspableBody>
+-->
+	<robot>
+		<filename>models/robots/hand_iiwa/hand_iiwa.xml</filename>
+		<dofValues>0 0.785398 0.785398 0.785398 0 0.785398 0.785398 0.785398 0 0.785398 0.785398 0.785398 0 0.610865 0 0.785398 </dofValues>
+		<transform>
+			<fullTransform>(+1 0 0 0)[0 0 0]</fullTransform>
+		</transform>
+	</robot>
+	<camera>
+		<position>+0 +0 +500</position>
+		<orientation>0 0 0 1</orientation>
+		<focalDistance>+500</focalDistance>
+	</camera>
+</world>
+

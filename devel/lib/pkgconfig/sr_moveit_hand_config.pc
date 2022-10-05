@@ -1,0 +1,8 @@
+prefix=/home/mamad/Graspit/devel
+
+Name: sr_moveit_hand_config
+Description: Description of sr_moveit_hand_config
+Version: 0.2.0
+Cflags: 
+Libs: -L/home/mamad/Graspit/devel/lib 
+Requires: 

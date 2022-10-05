@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<!-- d0: lh_FFJ4, min=-0.349066, max=0.349066 -->
+<!-- d1: lh_FFJ3, min=0, max=1.5708 -->
+<!-- d2: lh_FFJ2, min=0, max=1.5708 -->
+<!-- d3: lh_FFJ1, min=0, max=1.5708 -->
+<!-- d4: lh_MFJ4, min=-0.349066, max=0.349066 -->
+<!-- d5: lh_MFJ3, min=0, max=1.5708 -->
+<!-- d6: lh_MFJ2, min=0, max=1.5708 -->
+<!-- d7: lh_MFJ1, min=0, max=1.5708 -->
+<!-- d8: lh_RFJ4, min=-0.349066, max=0.349066 -->
+<!-- d9: lh_RFJ3, min=0, max=1.5708 -->
+<!-- d10: lh_RFJ2, min=0, max=1.5708 -->
+<!-- d11: lh_RFJ1, min=0, max=1.5708 -->
+<!-- d12: lh_THJ5, min=-1.0472, max=1.0472 -->
+<!-- d13: lh_THJ4, min=0, max=1.22173 -->
+<!-- d14: lh_THJ2, min=-0.698132, max=0.698132 -->
+<!-- d15: lh_THJ1, min=0, max=1.5708 -->
+<EigenGrasps dimensions="16">
+	<EG>
+		<EigenValue value="0.5"/> <!--EigenValue is not used in the code at this stage -->
+		<!--Limits min="0" max="0"/-->
+		<DimVals d0="0" d1="0.785398" d2="0.785398" d3="0.785398" d4="0" d5="0.785398" d6="0.785398" d7="0.785398" d8="0" d9="0.785398" d10="0.785398" d11="0.785398" d12="0" d13="0.610865" d14="0" d15="0.785398"/>
+	</EG>
+	<ORIGIN>
+		<EigenValue value="0.5"/> 
+		<DimVals d0="0" d1="0.785398" d2="0.785398" d3="0.785398" d4="0" d5="0.785398" d6="0.785398" d7="0.785398" d8="0" d9="0.785398" d10="0.785398" d11="0.785398" d12="0" d13="0.610865" d14="0" d15="0.785398"/>
+	</ORIGIN>
+</EigenGrasps>

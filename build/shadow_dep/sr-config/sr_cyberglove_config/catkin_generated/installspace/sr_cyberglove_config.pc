@@ -1,0 +1,8 @@
+prefix=/home/mamad/Graspit/install
+
+Name: sr_cyberglove_config
+Description: Description of sr_cyberglove_config
+Version: 1.4.0
+Cflags: 
+Libs: -L/home/mamad/Graspit/install/lib 
+Requires: 
